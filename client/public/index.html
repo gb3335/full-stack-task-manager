@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Task Management Application</h1>
+  </header>
+  <main>
+    <form id="task-form">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea>
+      <label for="status">Status:</label>
+      <select id="status" name="status">
+        <option value="To Do">To Do</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Done">Done</option>
+      </select>
+      <button type="submit">Create Task</button>
+    </form>
+    <div id="task-list">
+      <!-- Task list will be dynamically rendered here -->
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
